@@ -159,6 +159,7 @@ a {
   z-index: 10;
   -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  row-gap: 1px;
 }
 
 svg {
@@ -193,7 +194,6 @@ svg {
   border-bottom: 1px solid #282828;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
-  height: 100px;
 }
 
 .nav-tab:hover {
