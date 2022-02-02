@@ -7,7 +7,7 @@
 }
 
 :root {
-  --text-font-family: 'La Belle Aurore', cursive;
+  --text-font-family: "La Belle Aurore", cursive;
 }
 
 body {
@@ -16,56 +16,79 @@ body {
 
 .text {
   color: #515152;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-style: italic;
   font-family: var(--text-font-family);
 }
 
-.html::after {
+.html::before {
   content: "<html>";
   position: absolute;
-  top: 2em;
-  left: 9em;
+  top: 3vh;
+  left: 8em;
 }
 
-.body::after {
+.body::before {
   content: "<body>";
   position: absolute;
-  top: 3em;
-  left: 10em;
+  top: 5vh;
+  left: 9em;
 }
 
 .body-end {
   content: "<body/>";
   position: absolute;
-  left: 11.5em;
+  bottom: 2vh;
+  left: 9em;
 }
 
 .html-end {
   content: "<html/>";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  bottom: 2vh;
+  left: 8em;
 }
 
-.hidden::before, .hidden::after {
+.section::before,
+.section::after {
+  position: absolute;
+  color: #515152;
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  font-family: var(--text-font-family);
+  left: 8em;
+}
+
+.section::before {
+  content: "<section>";
+  top: 35vh;
+}
+
+.section::after {
+  content: "<section/>";
+  top: 58vh;
+}
+
+.h1-text::before,
+.h1-text::after {
   position: absolute;
   color: #515152;
   margin: 0;
   font-size: 18px;
+  font-style: italic;
   font-family: var(--text-font-family);
+  left: 10em;
 }
 
-.hidden::before {
+.h1-text::before {
   content: "<h1>";
-  top: 26em;
-  left: 15em;
+  top: 38vh;
 }
 
-.hidden::after {
+.h1-text::after {
   content: "<h1/>";
-  top: 43em;
-  right: 8em;
+  top: 52vh;
 }
 
 .nav,
@@ -103,7 +126,7 @@ body {
   z-index: 3;
 }
 
-h1:hover {
+h1.hover:hover {
   -webkit-transform: translate3d(0, -10px, 22px);
           transform: translate3d(0, -10px, 22px);
   color: #ff0266;
@@ -193,7 +216,7 @@ svg {
   font-size: 2vw;
   border-bottom: 1px solid #282828;
   background-color: transparent;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-tab:hover {
@@ -242,6 +265,9 @@ svg {
   section.nav {
     padding-left: 13em;
   }
+  main {
+    padding-left: 13em;
+  }
 }
 
 @media (max-width: 800px) {
@@ -249,12 +275,21 @@ svg {
     width: 65px;
     top: -45px;
   }
+  section.nav {
+    padding-left: 5em;
+  }
+  main {
+    padding-left: 5em;
+  }
 }
 
 @media (max-width: 360px) {
   svg {
     width: 65px;
     top: -45px;
+  }
+  main {
+    margin-left: -1.5em;
   }
 }
 
@@ -274,6 +309,9 @@ svg {
   }
   section.nav {
     margin-left: 3.5em;
+  }
+  main {
+    padding-left: 3.5em;
   }
 }
 

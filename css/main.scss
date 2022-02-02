@@ -1,63 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-  --text-font-family: 'La Belle Aurore', cursive;
+:root {
+  --text-font-family: "La Belle Aurore", cursive;
 }
 body {
   font-family: "ROBOTO", sans-serif;
 }
 
-.text{
+.text {
   color: #515152;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-style: italic;
   font-family: var(--text-font-family);
 }
-.html::after{
+.html::before {
   content: "<html>";
   position: absolute;
-  top: 2em;
-  left: 9em;
+  top: 3vh;
+  left: 8em;
 }
-.body::after{
+.body::before {
   content: "<body>";
   position: absolute;
-  top: 3em;
-  left: 10em;
+  top: 5vh;
+  left: 9em;
 }
-
-.body-end{
+.body-end {
   content: "<body/>";
   position: absolute;
-  left: 11.5em;
+  bottom: 2vh;
+  left: 9em;
 }
-.html-end{
+.html-end {
   content: "<html/>";
-  display:flex;
-  
+  position: absolute;
+  bottom: 2vh;
+  left: 8em;
 }
-.hidden::before,.hidden::after{
+.section::before,
+.section::after {
+  position: absolute;
+  color: #515152;
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  font-family: var(--text-font-family);
+  left: 8em;
+}
+.section::before {
+  content: "<section>";
+  top: 35vh;
+}
+.section::after {
+  content: "<section/>";
+  top: 58vh;
+}
+
+.h1-text::before,
+.h1-text::after {
   position: absolute;
   color: #515152;
   margin: 0;
   font-size: 18px;
+  font-style: italic;
   font-family: var(--text-font-family);
+  left: 10em;
 }
-.hidden::before{
+.h1-text::before {
   content: "<h1>";
-  top: 26em;
-  left: 15em;
-  
+  top: 38vh;
 }
-.hidden::after{
+.h1-text::after {
   content: "<h1/>";
-  top: 43em;
-  right: 8em;
+  top: 52vh;
 }
 .nav,
 .slider {
@@ -83,7 +103,7 @@ body {
   transition: all 0.3s ease;
   z-index: 3;
 }
-h1:hover {
+h1.hover:hover {
   transform: translate3d(0, -10px, 22px);
   color: #ff0266;
 }
@@ -129,9 +149,9 @@ a {
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   row-gap: 1px;
 }
-svg{
-  display:block;
-  position:absolute;
+svg {
+  display: block;
+  position: absolute;
   top: 0;
 }
 
@@ -156,9 +176,9 @@ svg{
   // letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 2vw;
-  border-bottom: 1px solid #282828; 
+  border-bottom: 1px solid #282828;
   background-color: transparent;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-tab:hover {
@@ -184,6 +204,8 @@ svg{
   right: 0;
   z-index: auto;
 }
+@media (max-width: 1080px) {
+}
 @media (min-width: 800px) {
   .nav h1,
   .slider h1 {
@@ -199,24 +221,36 @@ svg{
     font-size: 3vw;
     height: 75px;
   }
-  .nav-container{
-    width:140px;
+  .nav-container {
+    width: 140px;
   }
-  section.nav{
+  section.nav {
+    padding-left: 13em;
+  }
+  main {
     padding-left: 13em;
   }
 }
-@media (max-width: 800px){
-  svg{
-    width:65px;
+@media (max-width: 800px) {
+  svg {
+    width: 65px;
     top: -45px;
-  }  
+  }
+  section.nav {
+    padding-left: 5em;
+  }
+  main {
+    padding-left: 5em;
+  }
 }
-@media (max-width: 360px){
-  svg{
-    width:65px;
+@media (max-width: 360px) {
+  svg {
+    width: 65px;
     top: -45px;
-  }  
+  }
+  main {
+    margin-left: -1.5em;
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -232,11 +266,14 @@ svg{
   }
 
   .nav-tab {
-    height:50px;
+    height: 50px;
     font-size: 1.4vw;
   }
-  section.nav{
-    margin-left:3.5em;
+  section.nav {
+    margin-left: 3.5em;
+  }
+  main {
+    padding-left: 3.5em;
   }
 }
 .background {
