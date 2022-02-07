@@ -1,4 +1,17 @@
-const API_KEY = "39843bedb53a1f654f32db2b2ab89dc8";
+
+- text: >
+    // Add OWM pyown to your enviornment variables
+    owm=pyowm.OWM('2n234a6af659351d0fc58bdpm8a91mpf')
+  apikey: 2n234a6af659351d0fc58bdpm8a91mpf
+
+- text: |
+    * function preload() {
+     *   var url = 'http://api.openweathermap.org/data/2.5/weather?q=London,UK'+
+     *    '&APPID=7bbbb47522846e8b3c26ba35c226c734';
+     *   weather = loadJSON(url);
+     * }
+
+  apikey: 7bbbb47522846e8b3c26ba35c226c734
 
 
 function onGeoOk(position){
