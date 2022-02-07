@@ -7,9 +7,12 @@
 }
 :root {
   --text-font-family: "La Belle Aurore", cursive;
+  --text-font-color: #515152;
 }
 body {
   font-family: "ROBOTO", sans-serif;
+  margin: 0;
+  border: border-box;
 }
 
 .text {
@@ -79,8 +82,8 @@ body {
   content: "<h1/>";
   top: 52vh;
 }
-.nav,
-.slider {
+.slider,
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,9 +94,8 @@ body {
   text-align: center;
   padding: 0 2em;
 }
-
-.nav h1,
-.slider h1 {
+.slider h1,
+.nav h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 5vw;
   margin: 0;
@@ -204,6 +206,200 @@ svg {
   right: 0;
   z-index: auto;
 }
+div.work-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1.3fr 2fr 0.7fr;
+  grid-gap: 0 25px;
+  grid-template-areas:
+    "h1 h2 h2 h2"
+    "h1 h3 h4 h5"
+    "h1 h6 h7 h8";
+}
+
+.post-image:first-child {
+  grid-area: h1;
+}
+.post-item:nth-child(2) {
+  grid-area: h2;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.post-item:nth-child(3) {
+  grid-area: h3;
+}
+
+.post-item:nth-child(4) {
+  grid-area: h4;
+}
+
+.post-item:nth-child(5) {
+  grid-area: h5;
+  background-color: #08ccb8;
+  font-size: 3em;
+  font-family: var(--text-font-family);
+  color: var(--text-font-color);
+  width: 100%;
+}
+
+.post-item:nth-child(6) {
+  grid-area: h6;
+}
+
+.post-item:nth-child(7) {
+  grid-area: h7;
+}
+
+.post-item:nth-child(8) {
+  grid-area: h8;
+}
+
+// .post-item:nth-child(9) {
+//   grid-area: h9;
+// }
+.post-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // padding: 1px;
+}
+
+.post-content {
+  font-weight: 300;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+.work-grid--text {
+  width: 100%;
+}
+.post-item h1 {
+  display: inherit;
+  position: relative;
+  top: 21vh;
+  left: 10vw;
+}
+.post-item h2 {
+  display: inherit;
+  position: absolute;
+  margin-left: 1vw;
+  top: -3vh;
+}
+.post-item.a-link1,
+.post-item.a-link2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.post-item.a-link1::before,
+.post-item.a-link2::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+.post-item.a-link1::after,
+.post-item.a-link2::after {
+  content: "View project";
+  position: absolute;
+  text-align: center;
+  font-size: 0;
+  z-index: 2;
+  font-family: var(--text-font-family);
+  color: #03dac6;
+}
+a.post-item.a-link1:hover::after,
+a.post-item.a-link2:hover::after {
+  animation: zoom-text 0.5s ease forwards;
+}
+@keyframes zoom-text {
+  from {
+    transform: scale(0%);
+    font-size: 1;
+  }
+
+  to {
+    transform: scale (100%);
+    font-size: 50px;
+  }
+}
+.visible {
+  filter: grayscale(90%) blur(3px);
+}
+a.post-item.a-link1:hover::before,
+a.a-link2:hover::before {
+  animation: loading1 0.3s ease forwards;
+}
+
+@keyframes loading1 {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+  }
+}
+a.post-item.a-link1:hover,
+a.post-item.a-link2:hover {
+  filter: grayscale(0%) blur(0px);
+  animation: skew 0.5s ease forwards;
+  z-index: 3;
+}
+@keyframes skew {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(110%);
+  }
+}
+
+.hidden {
+  display: none;
+}
+#hiddenContainer {
+  z-index: 99;
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: none;
+}
+
+// button {
+//   position: absolute;
+//   left: 50%;
+//   bottom: 50%;
+//   transform: translate(-50%, -50%);
+//   background-color: transparent;
+//   border: none;
+// }
+// button::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 0;
+//   height: 100%;
+//   background-color: #03dac6;
+//   transition: width 0.3s ease-in-out;
+//   z-index: 1;
+// }
+// button:hover::after {
+//   width: 100%;
+// }
 @media (max-width: 1080px) {
 }
 @media (min-width: 800px) {
@@ -225,10 +421,10 @@ svg {
     width: 140px;
   }
   section.nav {
-    padding-left: 13em;
+    margin-left: 13em;
   }
   main {
-    padding-left: 13em;
+    margin-left: 13em;
   }
 }
 @media (max-width: 800px) {
@@ -237,10 +433,10 @@ svg {
     top: -45px;
   }
   section.nav {
-    padding-left: 5em;
+    margin-left: 5em;
   }
   main {
-    padding-left: 5em;
+    margin-left: 5em;
   }
 }
 @media (max-width: 360px) {
@@ -273,7 +469,7 @@ svg {
     margin-left: 3.5em;
   }
   main {
-    padding-left: 3.5em;
+    margin-left: 3.5em;
   }
 }
 .background {
