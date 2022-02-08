@@ -174,10 +174,13 @@ svg {
 
 .nav-tab {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #03dac6;
   // letter-spacing: 0.1rem;
   transition: all 0.5s ease;
-  font-size: 2vw;
+  font-size: 20px;
   border-bottom: 1px solid #282828;
   background-color: transparent;
   font-family: "Open Sans", sans-serif;
@@ -279,8 +282,11 @@ div.work-grid {
 .post-item h1 {
   display: inherit;
   position: relative;
-  top: 21vh;
+  top: 20vh;
   left: 10vw;
+}
+.post-item h1:hover {
+  color: #1e1f26;
 }
 .post-item h2 {
   display: inherit;
@@ -304,6 +310,7 @@ div.work-grid {
   background-color: #fff;
   position: absolute;
   z-index: 1;
+  display: inherit;
 }
 .post-item.a-link1::after,
 .post-item.a-link2::after {
@@ -314,6 +321,7 @@ div.work-grid {
   z-index: 2;
   font-family: var(--text-font-family);
   color: #03dac6;
+  display: inherit;
 }
 a.post-item.a-link1:hover::after,
 a.post-item.a-link2:hover::after {
@@ -401,6 +409,16 @@ a.post-item.a-link2:hover {
 //   width: 100%;
 // }
 @media (max-width: 1080px) {
+  @keyframes loading1 {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    100% {
+      width: 250px;
+      height: 250px;
+    }
+  }
 }
 @media (min-width: 800px) {
   .nav h1,

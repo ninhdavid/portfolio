@@ -11,8 +11,8 @@ function unBlock() {
   document.getElementById("hiddenContainer").style.display = "block";
   getIframeAdd();
   // getIdValueAdd();
-  // getIdData();
-  alert("Oop! Error.");
+  // // getIdData();
+  alert("Oop! Error, もう2度クリックしてください。");
 }
 
 //get id from iframe
@@ -50,14 +50,16 @@ const myArray = [
 //   console.log(idAdd);
 // }
 // let idAdded = "idAdd";
-// //get src by id
+
+//get src by id
 function getIframeAdd() {
   $(document).ready(function () {
-    $(".main .section .work-grid a").on("click", function () {
+    $(".main .section .work-grid a").on("click", function (event) {
+      event.preventDefault();
       let dataId = $(this).attr("data-id");
       console.log(dataId);
       let newSrc = myArray.find(({ id }) => id == dataId); // *main getIframeValue
-
+      // document.getElementById("iframe").srcdoc = newSrc.src; //hien thi noi dung ra man hinh
       let link = getIframeSrc.setAttribute("src", newSrc.src);
     });
   });
