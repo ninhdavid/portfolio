@@ -6,10 +6,9 @@
 }
 body {
   height: 600px;
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
   background-color: #515152;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,23 +29,23 @@ img {
   font-size: 50px;
   font-family: var(--text-font-family);
 }
+#clock {
+  position: absolute;
+  top: -1vh;
+}
 #weather {
   position: absolute;
-  top: 20%;
-  left: 35%;
+  top: 20vh;
+  left: 35vw;
 }
 #quote {
   position: absolute;
   width: 22ch;
-  margin-top: 17%;
-  margin-left: -8%;
-}
-#clock {
-  position: absolute;
-  top: 0%;
+  margin-top: 15vh;
+  margin-left: -8vw;
 }
 a {
   position: absolute;
-  top: 65%;
-  left: 40%;
+  top: 65vh;
+  left: 40vw;
 }
