@@ -12,7 +12,7 @@ function unBlock() {
   getIframeAdd();
   // getIdValueAdd();
   // // getIdData();
-  alert("Oop! Error, もう2度クリックしてください。");
+  alert("Oop! Error, もう一度クリックしてください。");
 }
 
 //get id from iframe

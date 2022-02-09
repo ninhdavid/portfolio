@@ -1,11 +1,4 @@
-
-    owm=pyowm.OWM('39843bedb53a1f654f32db2b2ab89dc8')
-- text: |
-    * function preload() {
-     *   var url = 'http://api.openweathermap.org/data/2.5/weather?q=London,UK'+
-     *    '&APPID=7bbbb47522846e8b3c26ba35c226c734';
-     *   weather = loadJSON(url);
-     * }
+const API_KEY = "39843bedb53a1f654f32db2b2ab89dc8";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
