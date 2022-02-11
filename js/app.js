@@ -23,7 +23,7 @@ link.addEventListener("click", handleLinkClick);
 
 function paintGreeting(username) {
   greeting.classList.remove(HIDDEN_CLASSNAMES);
-  greeting.innerText = `こんにちは。 ${username}`;
+  greeting.innerText = `こんにちは、 ${username}`;
 }
 
 const savedUsername = localStorage.getItem("USERNAME_KEY");
