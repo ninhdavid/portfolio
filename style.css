@@ -1,0 +1,79 @@
+:root {
+  --text-font-family: "La Belle Aurore", cursive;
+}
+.hidden {
+  display: none;
+}
+body {
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #515152;
+  display: flex;
+  overflow: hidden;
+}
+form {
+  position: relative;
+  top: 7%;
+  left: 40%;
+  line-height: 15px;
+}
+#todo-list {
+  position: absolute;
+  left: 20%;
+  top: 71%;
+  overflow: hidden;
+  width: 50%;
+  text-overflow: ellipsis;
+  line-height: 22px;
+}
+#todo-list:hover {
+  overflow: visible;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100vw;
+  height: 100vh;
+}
+#greeting {
+  font-size: 35px;
+  position: absolute;
+  top: 10%;
+  left: 33%;
+}
+
+.container {
+  top: 25%;
+  left: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: var(--text-font-family);
+}
+#clock {
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  left: 35%;
+  font-size: 30px;
+}
+#weather {
+  position: absolute;
+  top: 20vh;
+  left: 35vw;
+}
+#quote {
+  position: absolute;
+  width: 25ch;
+  top: 45%;
+  left: 35%;
+  font-size: 20px;
+}
+a {
+  position: absolute;
+  top: 66vh;
+  left: 40vw;
+}
