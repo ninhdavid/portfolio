@@ -77,3 +77,62 @@ a {
   top: 66vh;
   left: 40vw;
 }
+@media screen and (max-width: 600px) {
+  .container {
+    left: 33%;
+  }
+  #clock {
+    left: 27%;
+    font-size: 20px;
+  }
+  #quote {
+    font-size: 15px;
+    left: 28vw;
+    width: 22ch;
+  }
+  form input {
+    left: 30vw;
+    top: 1%;
+    width: 200px;
+  }
+  .submit {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #quote {
+    left: 30vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    left: 33%;
+  }
+  #clock {
+    left: 27%;
+    font-size: 20px;
+  }
+  #quote {
+    font-size: 15px;
+    left: 25vw;
+    width: 22ch;
+  }
+  form input {
+    left: 20vw;
+    top: 1%;
+    width: 125px;
+  }
+  .submit {
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .submit {
+    width: 30px;
+  }
+  form input {
+    width: 100px;
+  }
+}
