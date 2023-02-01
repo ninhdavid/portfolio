@@ -1,0 +1,19 @@
+.wrapper {
+	min-width: 1280px;
+}
+
+.container {
+	background-color: aqua;
+}
+
+.sidebar {
+	background-color: rgb(103, 155, 137);
+	width: var(--nav-width);
+}
+.content {
+	background-color: var(--bg-color);
+	height: 1200px;
+	margin-left: var(--nav-width);
+	padding-left: calc(var(--border-width) * 1.75);
+	width: 100%;
+}

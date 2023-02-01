@@ -1,0 +1,33 @@
+.wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: var(--bg-color);
+	box-shadow: var(--border-width) 0px calc(var(--border-width) * 1.75)
+		calc(var(--border-width) / 4) rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	width: var(--nav-width);
+	color: var(--text-color);
+	z-index: 2;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #000;
+	width: var(--nav-width);
+
+	& svg {
+		position: absolute;
+		height: 25vh;
+		background-color: #000;
+		top: 0;
+		width: var(--nav-width);
+		height: 20vh;
+	}
+}

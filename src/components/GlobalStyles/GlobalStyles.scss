@@ -1,0 +1,67 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+	--primary: rgb(250, 244, 230);
+	--primary-rgb: 250, 244, 230;
+
+	--bg-color: rgb(30, 31, 38);
+
+	--bg-hover: #03dac6;
+	$bg-hover: hsl(174, 97%, 43%);
+
+	--text-color: rgb(3, 218, 198);
+	--text-color-rgb: 3, 218, 98;
+
+	--default-layout-width: 102.4rem;
+	--header-margin: 2.4rem;
+
+	--border-width: 2.4rem;
+	--border-color: #282828;
+
+	--text-font-family: 'La Belle Aurore', cursive;
+	--text-font-color: #515152;
+
+	--nav-width: 7vw;
+
+	--border-width: 2rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	text-rendering: optimizeSpeed;
+	background-color: rgb(30, 31, 38);
+}
+button,
+input,
+[tabindex] {
+	outline: none;
+	border: none;
+}
+
+a[href] {
+	color: var(--text-color);
+	text-decoration: none;
+}
+.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
