@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ninhdavid/portfolio.git/static/css/main.f51abfb2.css",
+    "main.js": "/ninhdavid/portfolio.git/static/js/main.0c4360a3.js",
+    "static/js/787.3c86a6c9.chunk.js": "/ninhdavid/portfolio.git/static/js/787.3c86a6c9.chunk.js",
+    "index.html": "/ninhdavid/portfolio.git/index.html",
+    "main.f51abfb2.css.map": "/ninhdavid/portfolio.git/static/css/main.f51abfb2.css.map",
+    "main.0c4360a3.js.map": "/ninhdavid/portfolio.git/static/js/main.0c4360a3.js.map",
+    "787.3c86a6c9.chunk.js.map": "/ninhdavid/portfolio.git/static/js/787.3c86a6c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f51abfb2.css",
+    "static/js/main.0c4360a3.js"
+  ]
+}
