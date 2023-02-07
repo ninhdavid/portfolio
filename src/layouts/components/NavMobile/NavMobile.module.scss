@@ -1,0 +1,16 @@
+.nav-m-item {
+	color: var(--text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	width: 65px;
+	margin: 0 5px;
+}
+.m-btn {
+	background-color: rgba(var(--bg-color-blue-rgb), 0.1);
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+	border-radius: 50%;
+}

@@ -1,0 +1,38 @@
+.container {
+	width: 100%;
+	padding: 0 var(--border-width);
+}
+
+.content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	padding: var(--border-width);
+	height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	.content {
+		padding: calc(var(--border-width) / 2);
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.content {
+		padding: calc(var(--border-width) / 4);
+	}
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+	.content {
+		padding: calc(var(--border-width) / 6);
+		grid-gap: 50px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.content {
+		padding: 0;
+		justify-content: center;
+		grid-gap: 20px;
+	}
+}
