@@ -1,19 +1,32 @@
 {
   "files": {
-    "main.css": "./static/css/main.26836caf.css",
-    "main.js": "./static/js/main.ce788ed8.js",
+    "main.css": "./static/css/main.14d38348.css",
+    "main.js": "./static/js/main.02eab241.js",
+    "static/css/659.43060950.chunk.css": "./static/css/659.43060950.chunk.css",
+    "static/js/659.158728ab.chunk.js": "./static/js/659.158728ab.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/css/486.6338090f.chunk.css": "./static/css/486.6338090f.chunk.css",
+    "static/js/486.73e797a4.chunk.js": "./static/js/486.73e797a4.chunk.js",
+    "static/media/bg-byehost-site-preview.jpeg": "./static/media/bg-byehost-site-preview.c9339948cacdd179a190.jpeg",
     "static/media/bg-byethost-site.jpg": "./static/media/bg-byethost-site.e64ffd4daaae6d5ef5c5.jpg",
+    "static/media/tiktok-min.jpeg": "./static/media/tiktok-min.29bd7123671ba5c31903.jpeg",
+    "static/media/tiktok-preview.jpeg": "./static/media/tiktok-preview.03068fd02b23472422c2.jpeg",
+    "static/media/shoe-store.webp": "./static/media/shoe-store.e0ef6386de25251b21ba.webp",
     "static/media/no-image.png": "./static/media/no-image.389e3ee6c573639495e8.png",
     "static/media/logo-top.svg": "./static/media/logo-top.a146ff14074f9020f16b5aac3d6002b4.svg",
     "static/media/effectSite.svg": "./static/media/effectSite.208ad1588cce967371960eb6aba2f11d.svg",
+    "static/media/loader.svg": "./static/media/loader.da81e135276cf554c98e4a49c59bdfb9.svg",
     "index.html": "./index.html",
-    "main.26836caf.css.map": "./static/css/main.26836caf.css.map",
-    "main.ce788ed8.js.map": "./static/js/main.ce788ed8.js.map",
-    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+    "main.14d38348.css.map": "./static/css/main.14d38348.css.map",
+    "main.02eab241.js.map": "./static/js/main.02eab241.js.map",
+    "659.43060950.chunk.css.map": "./static/css/659.43060950.chunk.css.map",
+    "659.158728ab.chunk.js.map": "./static/js/659.158728ab.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map",
+    "486.6338090f.chunk.css.map": "./static/css/486.6338090f.chunk.css.map",
+    "486.73e797a4.chunk.js.map": "./static/js/486.73e797a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26836caf.css",
-    "static/js/main.ce788ed8.js"
+    "static/css/main.14d38348.css",
+    "static/js/main.02eab241.js"
   ]
 }
